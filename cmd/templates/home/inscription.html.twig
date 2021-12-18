@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block title %}inscription{% endblock %}
+
+
+{% block body %}
+<form method="POST" action="{{path("save")}}">
+
+<label>NOM:</label>
+<input type='text' name='nom'></br>
+
+<label>PRIX</label>
+<input type='number' name='prix'></br>
+
+<label>description</label>
+<input type='text' name='description'></br>
+
+<input type='submit' value='envoyer'>
+{% endblock %}
+

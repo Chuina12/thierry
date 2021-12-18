@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% block title %}inscription{% endblock %}
+
+
+{% block body %}
+
+{% for msg in app.flashes('success') %}
+<div class="alert alert-success">
+{{msg}}
+</div>
+{% endfor %}
+
+<form method="POST" action="{{path("save")}}">
+
+<center>
+<label>NOM:</label>
+<input type='text' style='width:400px;' class="form-control form-control-lg" placeholder="nom" data-sb-validations="required,nom" name='nom'></br>
+
+<label>PRIX</label>
+<input type='number' style='width:400px;' class="form-control form-control-lg" placeholder="prix" data-sb-validations="required,nom"  name='prix'></br>
+
+<label>description</label>
+<input type='text' style='width:400px;' class="form-control form-control-lg" placeholder="nom Address" data-sb-validations="required,nom" name='description'></br>
+
+<button class='btn btn-success btn-lg'type='submit'>Send</button>
+</center>
+{% endblock %}
+

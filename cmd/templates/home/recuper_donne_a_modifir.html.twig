@@ -1,0 +1,21 @@
+<! Doctype html>
+<html>
+<head><title></title>
+</head>
+
+<body>
+<form method="POST" action="{{path('save_update',{'id':stock.id})}}">
+
+<label>NOM:</label>
+<input type='text' name='nom' value="{{stock.nom}}"></br>
+
+<label>PRIX</label>
+<input type='number' name='prix' value="{{stock.prix}}"></br>
+
+<label>description</label>
+<input type='text' name='description' value="{{stock.description}}"></br>
+
+<input type='submit' value='envoyer'>
+
+</body>
+</html>

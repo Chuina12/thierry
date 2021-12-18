@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
+
+        {% block javascripts %}
+            {#{{ encore_entry_script_tags('app') }}#}
+        {% endblock %}
+    </head>
+    <body style='margin:0px'>
+    <header style='background-color:blue; margin:0px;'>
+    <h1>HS</h1>
+
+    <div style='margin-left:800px; color:aqua;' >
+    <a href='' style='color:aqua;'>inscription</a>
+    <a href=''  style='color:aqua;'>connexion</a>
+    </div>
+
+    </header>
+        {% block body %}{% endblock %}
+        <footer style='background-color:black; padding-top:70px;'>
+        <i style='color:red;'> copy right by tout droit reserver</i>
+        </footer>
+    </body>
+</html>

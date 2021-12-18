@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+{% block title %}liste {% endblock %}
+
+{% for stock in stocks %}
+<div>
+{{stock.nom}}
+{{stock.prix}}
+{{stock.description}}
+<a href="{{path('suppression',{'id':stock.id})}}">Suppression</a>
+<a href="{{path('modification',{'id':stock.id})}}">modification</a>
+</div>
+{% endfor %}
+{% endblock %}
