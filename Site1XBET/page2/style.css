@@ -1,0 +1,63 @@
+img
+{
+	width:200px;
+	height:200px;
+	position:relative;
+	top:30px;
+	
+	
+}
+#box1
+{
+	display : flex;
+	position:relative;
+	left:10px;
+
+}
+#box2
+{
+	display:flex;
+	position:relative;
+	
+}
+#box3
+{
+	display:flex;
+	position:relative;
+	left:10px;
+}
+#box4
+	
+{
+	display:flex;
+	position:relative;
+	left:100px;
+}
+i
+{
+	position:relative;
+	top:295px;
+	left:135px;
+}
+u
+{
+	position:relative;
+	bottom:60px;
+	left:40px;
+}
+s
+{
+	position:relative;
+	bottom:60px;
+	left:40px;
+}
+p
+{
+	position:relative;
+	bottom:80px;
+	left:40px;
+}
+div
+{
+	margin:auto;
+}
